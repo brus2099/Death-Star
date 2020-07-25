@@ -1,0 +1,280 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #1b0028;
+}
+
+.navbar {
+    height: 140px;
+    width: 100%;
+    background: #3b194f;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+.center {
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+.logo {
+    width: 14%;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+
+.logo img {
+    display:block;
+    float:left;
+    height: 100px;
+}
+
+.menu {
+    width:50%;
+    float: left;
+    font-size: 14px;
+    padding-top: 30px;
+}
+
+.menu ul li {
+    line-height: 46px;
+    display: inline-block;
+    list-style: none;
+    height: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 250ms all;
+}
+
+.menu a:hover {
+    color: #fb990d;
+}
+
+.search {
+    width: 20%; 
+    float: left;
+    padding: 5px;
+    background: #ffffff;
+    border-radius: 30px;
+    margin-top: 53px;
+}
+
+.search input {
+    border: none;
+    width: 75%;
+}
+
+.search img {
+    width: 13%;
+    height: 15px;
+    margin-top: 5px;
+    float: right;
+}
+
+.search img:hover {
+    cursor: pointer;
+}
+
+.user-info {
+    width: 10%;
+    float: right;
+    margin-top: 53px;
+}
+
+.user-info img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.user-info img:hover {
+    cursor: pointer;
+    fill: #fb990d;
+}
+
+/*---------------*/
+
+.image-slider {
+    width: 49%;
+    margin-top: 25px;
+    float: left;
+}
+
+.image-slider #main-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.all-images img {
+    width: 23%;
+    transition: 250ms all;
+}
+
+.all-images img:hover {
+    border: 2px solid blue;
+    background: #3b194f;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+                        /*--------------*/
+
+.product-info {
+    width:49%;
+    margin-top:25px;
+    float: right;
+    color: #fff;
+}
+
+.name-product {
+    width: 100%;
+    float: left;
+}
+
+.name-product h1 {
+    margin-top: 0;
+    float: left;
+    font-size: 35px;
+}
+
+.name-product img {
+    margin-top: 13px;
+    margin-left: 20px;
+    display: inline-block;
+    height: 30px;
+}
+
+.product-info #price {
+    font-size: 22px;
+}
+
+.add-info {
+    font-size: 12px;
+}
+
+.options-product {
+    margin: 25px auto;
+
+}
+
+.options-product button p {
+    padding: 0 25px;
+}
+
+.options-product button {
+    width: 40%;
+    background: #fff;
+    margin: auto 10px;
+    border: none;
+    border-radius: 30px;
+    transition: 250ms all;
+}
+
+.options-product button:hover {
+    background: #fb990d;
+    color: #fff;
+}
+
+.new-shape {
+    fill: red;
+}
+
+.restrictions {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.some-numbers {
+    display: inline-block;
+    width: 24%;
+}
+
+.some-numbers img {
+    height: 95px;
+}
+
+.text-info {
+    position: relative;
+    top: -110px;
+    left: 15px;
+}
+
+.text-info .ranking {
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    top: -28px;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+/*-------------------*/
+
+.tabs-menu label {
+    background: #ddd;
+    padding: 10px;
+    color: #1b0028;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.tabs-menu label:hover {
+    background: #fff;
+}
+
+.tabs-content {
+    height: 120px;
+    margin-bottom: 50px;
+    background: #fff;
+    border-radius: 0px 20px 20px 20px;
+    position: relative;
+}
+
+.tabs-content div {
+    position: absolute;
+    transition: all 400ms ease;
+    opacity: 0;
+    visibility: hidden;
+    padding: 30px;
+    background: #fff;
+}
+
+#radio1, #radio2, #radio3, #radio4 {
+    display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    margin-bottom: 50px;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.tabs-menu label:after {
+    background: #fff;
+}
